@@ -48,7 +48,7 @@ public class NappyDriver {
 
     public static void addChild() {
         try {
-            System.out.print("Child's Name: ");
+            System.out.print("Models.Child's Name: ");
             String name = "";
             //while (name == "") {
             name = in.readLine();
@@ -64,9 +64,9 @@ public class NappyDriver {
 
     public static void deleteChild() {
         try {
-            System.out.print("Child's Name: ");
+            System.out.print("Models.Child's Name: ");
             String name = in.readLine();
-            System.out.print("Child's ID: ");
+            System.out.print("Models.Child's ID: ");
             int id = Integer.parseInt(in.readLine());
             server.DeleteChild(name);
         } catch (IOException ioex) {

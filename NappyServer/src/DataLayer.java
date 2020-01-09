@@ -1,3 +1,4 @@
+import Models.Child;
 import org.jetbrains.annotations.NotNull;
 
 import java.sql.*;
@@ -11,10 +12,12 @@ public class DataLayer {
 
     public DataLayer() {
         try {
-            connect = DriverManager.getConnection("jdbc:mysql://localhost/nappy?user=&password=");
+            connect = DriverManager.getConnection("jdbc:mysql://localhost/nappy?user=troy&password=f0CmRIUC");
             statement = connect.createStatement();
         } catch (SQLException sqlex) {
             DisplaySQLException(sqlex);
+        } catch (NullPointerException nex) {
+            System.out.println("Unable to connect to database. Please check connection credentials and try again.");
         }
     }
 
