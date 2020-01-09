@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="779ac527-c42d-4b4a-98db-16aec249d5bc" name="Default Changelist" comment="" />
+    <list default="true" id="779ac527-c42d-4b4a-98db-16aec249d5bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/CodeCrafters.ChildMinder.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NappyServer/Child.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NappyServer/DataLayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NappyServer/NappyDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NappyServer/NappyServer.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +37,11 @@
     <analyzeAfterCompile>true</analyzeAfterCompile>
     <toolWindowToFront>false</toolWindowToFront>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1VBVUe7mMlI34XldsVPh3sAS00Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="autoscrollFromSource" value="true" />
@@ -42,17 +55,16 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-    </configuration>
     <configuration name="NappyDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NappyDriver" />
       <module name="NappyServer" />
@@ -69,6 +81,15 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,14 +112,33 @@
       </list>
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="779ac527-c42d-4b4a-98db-16aec249d5bc" name="Default Changelist" comment="" />
+      <created>1578388821372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578388821372</updated>
+      <workItem from="1578388824374" duration="337000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="203" width="806" height="674" key="#Project_Structure" timestamp="1576817476377">
-      <screen x="0" y="28" width="1920" height="1027" />
+    <state x="395" y="124" width="603" height="478" key="#Project_Structure" timestamp="1578388875741">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="395" y="124" width="603" height="478" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1578388875741" />
     <state x="555" y="203" width="806" height="674" key="#Project_Structure/0.28.1920.1027@0.28.1920.1027" timestamp="1576817476377" />
-    <state x="418" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576873495957">
-      <screen x="0" y="28" width="1920" height="1027" />
+    <state x="274" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578388859705">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="274" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1578388859705" />
     <state x="418" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1027@0.28.1920.1027" timestamp="1576873495957" />
     <state x="481" y="28" width="950" height="1024" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576833445686">
       <screen x="0" y="28" width="1920" height="1027" />
@@ -108,21 +148,25 @@
       <screen x="0" y="28" width="1920" height="1027" />
     </state>
     <state width="445" height="466" key="DebuggerActiveHint/0.28.1920.1027@0.28.1920.1027" timestamp="1577157699970" />
-    <state width="1920" height="356" key="GridCell.Tab.0.bottom" timestamp="1578369446201">
-      <screen x="0" y="28" width="1920" height="1027" />
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1578389166294">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578389166294" />
     <state width="1920" height="356" key="GridCell.Tab.0.bottom/0.28.1920.1027@0.28.1920.1027" timestamp="1578369446201" />
-    <state width="1920" height="356" key="GridCell.Tab.0.center" timestamp="1578369446201">
-      <screen x="0" y="28" width="1920" height="1027" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1578389166293">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578389166293" />
     <state width="1920" height="356" key="GridCell.Tab.0.center/0.28.1920.1027@0.28.1920.1027" timestamp="1578369446201" />
-    <state width="1920" height="356" key="GridCell.Tab.0.left" timestamp="1578369446201">
-      <screen x="0" y="28" width="1920" height="1027" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1578389166293">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578389166293" />
     <state width="1920" height="356" key="GridCell.Tab.0.left/0.28.1920.1027@0.28.1920.1027" timestamp="1578369446201" />
-    <state width="1920" height="356" key="GridCell.Tab.0.right" timestamp="1578369446201">
-      <screen x="0" y="28" width="1920" height="1027" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1578389166293">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578389166293" />
     <state width="1920" height="356" key="GridCell.Tab.0.right/0.28.1920.1027@0.28.1920.1027" timestamp="1578369446201" />
     <state width="1920" height="356" key="GridCell.Tab.1.bottom" timestamp="1578369446202">
       <screen x="0" y="28" width="1920" height="1027" />
@@ -140,6 +184,10 @@
       <screen x="0" y="28" width="1920" height="1027" />
     </state>
     <state width="1920" height="356" key="GridCell.Tab.1.right/0.28.1920.1027@0.28.1920.1027" timestamp="1578369446202" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1578553484683">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578553484683" />
     <state x="654" y="438" width="608" height="204" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576837034222">
       <screen x="0" y="28" width="1920" height="1027" />
     </state>
