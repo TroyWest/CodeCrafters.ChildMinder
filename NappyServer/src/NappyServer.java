@@ -1,15 +1,21 @@
 import Models.Child;
+import org.json.simple.JSONObject;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
 import java.sql.Date;
 import java.util.LinkedList;
 
 public class NappyServer implements Runnable {
     private DataLayer dl = null;
     private LinkedList<Child> children = null;
+    private Socket socket = null;
 
-    public NappyServer() {
+    public NappyServer(Socket _socket) {
         dl = new DataLayer();
         children = dl.readChildren();
+        socket = _socket;
     }
 
     public void displayChildren() {
@@ -49,6 +55,19 @@ public class NappyServer implements Runnable {
     }
 
     public void run() {
+        try {
+            DataOutputStream dout = new DataOutputStream(socket.getOutputStream());
+            JSONObject outputData = new JSONObject();
+            outputData.put("Version", "ChildMinder v0.1 server");
 
+            dout.writeUTF(outputData.toJSONString());
+            Thread.sleep(100);
+            socket.close();
+        } catch (IOException ioex) {
+            System.out.println(ioex.getMessage());
+        } catch (InterruptedException intex) {
+            System.out.println(intex.getMessage());
+
+        }
     }
 }

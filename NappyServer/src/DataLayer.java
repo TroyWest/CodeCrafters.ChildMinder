@@ -12,7 +12,7 @@ public class DataLayer {
 
     public DataLayer() {
         try {
-            connect = DriverManager.getConnection("jdbc:mysql://localhost/nappy?user=&password=");
+            connect = DriverManager.getConnection("jdbc:mysql://cmdb.codecrafters.co.nz/nappy?user=cmdb&password=childMinder");
             statement = connect.createStatement();
         } catch (SQLException sqlex) {
             DisplaySQLException(sqlex);

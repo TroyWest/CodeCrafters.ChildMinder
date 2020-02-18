@@ -1,14 +1,18 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.ServerSocket;
 import java.sql.Date;
+import java.util.LinkedList;
 
-public class NappyDriver {
+public class NappyDriver implements Runnable {
     private static BufferedReader in;
-    private static NappyServer server;
+    private static NappyServer server = new NappyServer(null);
     private static boolean isRunning = true;
+    private static int port = 5454;
+    private static LinkedList<Thread> threads = new LinkedList<Thread>();
 
-    public static void processInput() {
+    public void processInput() {
         System.out.print(':');
         String c = "";
         try {
@@ -36,7 +40,7 @@ public class NappyDriver {
 
     }
 
-    public static void displayMenu() {
+    public void displayMenu() {
         System.out.println();
         System.out.println("NappyServer Copyright 2019 CodeCrafters");
         System.out.println("=======================================");
@@ -46,7 +50,7 @@ public class NappyDriver {
         System.out.println("(q) Quit Nappy server");
     }
 
-    public static void addChild() {
+    public void addChild() {
         try {
             System.out.print("Models.Child's Name: ");
             String name = "";
@@ -62,7 +66,7 @@ public class NappyDriver {
         }
     }
 
-    public static void deleteChild() {
+    public void deleteChild() {
         try {
             System.out.print("Models.Child's Name: ");
             String name = in.readLine();
@@ -74,14 +78,40 @@ public class NappyDriver {
         }
     }
 
-
-    public static void main(String[] args) {
-        server = new NappyServer();
+    @Override
+    public void run() {
         in = new BufferedReader(new InputStreamReader(System.in));
         while (isRunning) {
             displayMenu();
             processInput();
         }
+        for (int i = 0; i < threads.size(); i++) {
+            Thread current = threads.get(i);
+            current.interrupt();
+        }
         server.closeConnections();
+    }
+
+
+    public static void main(String[] args) {
+        int port = 5454;
+        NappyDriver driver = new NappyDriver();
+        Thread console = new Thread(driver);
+        console.start();
+        try {
+            while (isRunning) {
+                NappyServer serverInstance;
+                ServerSocket ss = new ServerSocket(port);
+                serverInstance = new NappyServer(ss.accept());
+                Thread newInstanceThread = new Thread(serverInstance);
+                threads.add(newInstanceThread);
+                newInstanceThread.start();
+                ss.close();
+            }
+
+        } catch (IOException ioex) {
+            System.out.println(ioex.getMessage());
+        }
+
     }
 }
