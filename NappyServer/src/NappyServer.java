@@ -60,7 +60,8 @@ public class NappyServer implements Runnable {
             JSONObject outputData = new JSONObject();
             outputData.put("Version", "ChildMinder v0.1 server");
 
-            dout.writeUTF(outputData.toJSONString());
+            dout.writeUTF(outputData.toJSONString() + "\n");
+
             Thread.sleep(100);
             socket.close();
         } catch (IOException ioex) {
